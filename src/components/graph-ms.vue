@@ -20,7 +20,7 @@ const graphData = ref([]);
 
 async function fetchData() {
   graphData.value = null;
-  const res = await fetch(`http://logcalhost:8888/graph`);
+  const res = await fetch(`http://localhost:8888/graph`);
   const jsonData = await res.json();
   
   // 날짜별 중복 제거
