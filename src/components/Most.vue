@@ -43,7 +43,7 @@ const sortedDb = ref([]);
 
 async function fetchData() {
   db.value = null;
-  const res = await fetch(`http://r1-json-server.fly.dev/db`);
+  const res = await fetch(`http://logcalhost:8888/db`);
   db.value = await res.json();
   sortDbByTotalValue();
 }
