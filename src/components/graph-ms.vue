@@ -20,7 +20,7 @@ const graphData = ref([]);
 
 async function fetchData() {
   graphData.value = null;
-  const res = await fetch(`https://r1-json-server.fly.dev/graph`);
+  const res = await fetch(`http://r1-json-server.fly.dev/graph`);
   const jsonData = await res.json();
   
   // 날짜별 중복 제거

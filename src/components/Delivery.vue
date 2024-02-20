@@ -33,7 +33,7 @@ const filteredPosts = ref([]); // 출력 값 담을 그릇
 const currentPage = ref(0);
 
 async function fetchData() {
-  const res = await fetch(`https://r1-json-server.fly.dev/pack`);
+  const res = await fetch(`http://r1-json-server.fly.dev/pack`);
   posts.value = await res.json();
 }
 
